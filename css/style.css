@@ -1,0 +1,371 @@
+/*主页*/
+.index-page .am-tabs-nav{
+    position: fixed;
+    bottom:0;
+    background: #fff;
+    border-top:1px solid #eee;
+    height: 65px;
+    padding-top: 10px;
+    z-index: 999;
+}
+.index-page .am-tabs{
+    margin: 0;
+}
+.index-page .am-tabs-nav span{
+    display: block;
+    font-size: 24px;
+}
+.index-page .am-tabs-nav a{
+    line-height: 24px;
+}
+.index-page .am-tabs-default .am-tabs-nav a{
+    color:#ccc
+}
+.index-page .am-tabs-default .am-tabs-nav>.am-active a{
+     background-color: transparent;
+    color: #0066ff;
+}
+.center-box{
+    margin-top: 10px;
+}
+.center-item .left{
+    padding-right: 5px;
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+.center-item div a img{
+    box-shadow: 0 3px 15px rgba(154, 154, 154, 0.85);
+    border-radius: 6px;
+}
+.center-item .right{
+    padding-left: 5px;
+    padding-right: 0;
+    margin-bottom: 10px;
+}
+.index-page .am-tabs-bd{
+    border:none;
+    padding-bottom: 60px;
+}
+.index-page-top h1{
+    margin: 0;
+}
+.index-page-top h2{
+    margin: 0 0 10px 0;
+}
+/*
+助医页面*/
+.header-style span{
+    color: #0066ff;
+}
+.medical-center{
+    padding: 10px;
+}
+.medical-center h1{
+    margin-top: 30px;
+}
+.medical-cen-top{
+    display: block;
+    background: url("../img/medical_03.png") no-repeat;
+    width: 100%;
+    height: 164px;
+    background-size: 100% 100%;
+    box-shadow: 0 15px 40px rgba(124, 124, 255, 0.71);
+    border-radius: 6px;
+}
+.medical-cen-bottom{
+    display: block;
+    background: url("../img/medical_06.png") no-repeat;
+    width: 100%;
+    height: 164px;
+    background-size: 100% 100%;
+    box-shadow: 0 15px 40px rgba(255, 197, 124, 0.71);
+    border-radius: 6px;
+}
+/*
+医生列表*/
+.bg{
+    background: #f2f2f2;
+
+}
+.doctor-list-page{
+    background: #e7e7e7;
+    height: 100%;
+    overflow: hidden;
+}
+.doctor-item{
+    background: #fff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+.item-top{
+    line-height: 70px;
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 10px;
+}
+.item-top .am-btn{
+    background: #0066ff;
+    border-radius: 4px;
+    color: #fff;
+}
+.item-top .am-btn span{
+    margin-right: 10px;
+}
+.item-top .right{
+    text-align: right;
+}
+.item-top div:first-child{
+    padding-left: 0;
+}
+.item-top div:last-child{
+    padding-right: 0;
+}
+.item-top .name{
+    font-size: 16px;
+    color: #000000;
+}
+.item-text{
+    display: block;
+    padding-top: 5px;
+}
+.item-text h4{
+    margin: 0;
+    font-weight: normal;
+    color: #000000;
+}
+.item-text div{
+    padding-left: 0;
+}
+.item-text div:last-child h4{
+    height: 50px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+}
+/*
+医生详情*/
+.doctor-details-page{
+    background: #f2f2f2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: hidden;
+}
+.details-top-box{
+    background: #fff;
+}
+.details-top{
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.details-top h4{
+    margin: 0;
+    font-weight: normal;
+}
+.details-top h4 span{
+    margin-left: 20px;
+}
+.top-header{
+    padding-top: 10px;
+}
+.details-top-bottom .am-btn{
+    background: #0066ff;
+    border-radius: 4px;
+    color: #fff;
+}
+.details-top-bottom .am-btn span{
+    margin-right: 10px;
+}
+.details-top-bottom div:first-child{
+    line-height: 37px;
+    text-align: center;
+}
+.details-top-box{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.details-center-box{
+    background: #fff;
+    padding: 10px 15px;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    margin-bottom: 10px;
+}
+.details-center-box h3{
+    margin: 0 0 5px 0;
+    font-weight: normal;
+    color: #0066ff;
+    font-size: 17px;
+}
+.details-center-box h4{
+    margin: 0;
+    font-weight: normal;
+    color: #000;
+}
+.details-center-box img{
+    margin-right: 10px;
+}
+/*
+健康档案*/
+.hl-bg{
+    background: #f6f6f6;
+}
+.health-record-page{
+    background: #f6f6f6;
+    padding-bottom: 20px;
+}
+.health-record-top{
+    background: url("../img/health_record_bg_02.png")no-repeat;
+    width: 100%;
+    height: 128px;
+    background-size: 100% 100%;
+    line-height: 128px;
+    padding-left: 10px;
+}
+.health-record-top h2{
+    color: #fff;
+    margin: 0;
+}
+.health-record-btn{
+    padding: 20px 10px;
+}
+.bluetooth-btn{
+    border-radius: 4px;
+    width: 100%;
+    background: #fff;
+    color: #0066ff;
+    letter-spacing: 2px;
+    box-shadow: 1px 1px 4px 1px #E2E1E1;
+}
+.bluetooth-btn span{
+    margin-right: 10px;
+}
+
+.record-right-1 {
+    width: 69%;
+    background: #fff;
+    padding: 20px 15px 15px 15px;
+    position: relative;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    float: left!important;
+    box-shadow: 1px 1px 4px 1px #E2E1E1;
+}
+
+.record-right-1:before {
+    content: "";
+    width: 0;
+    height: 0;
+    right: 100%;
+    top: 42px;
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-right: 13px solid #fff;
+    border-bottom: 10px solid transparent;
+}
+.health-record-bottom{
+    margin-bottom: 10px;
+}
+.health-record-bottom .left{
+    line-height: 130px;
+}
+.record-right-1 h2{
+    font-size: 18px;
+    margin: 0;
+    font-weight: normal;
+    padding-left: 0;
+}
+.record-right-1 h3{
+    margin: 0;
+    font-weight: normal;
+    color: #848484;
+}
+.record-right-1 .right-2{
+    font-size: 14px;
+    color: #bebebe;
+}
+.record-right-1 .right-2 span{
+    font-size: 1.25em;
+    margin-right: 10px;
+    color: #333;
+}
+.health-record-bottom .left-bottom{
+    line-height: 150px;
+}
+.health-record-btn .am-u-sm-10{
+    width: 80%;
+}
+
+/*
+购药*/
+.buy-medicine-page{
+    background: #f6f6f6;
+    padding-bottom: 55px;
+}
+.buy-header{
+    background: #ffcca7;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+    padding: 5px;
+    font-size: 13px;
+}
+.buy-top-right h3{
+    margin: 0;
+    font-weight: normal;
+    color: #000000;
+}
+.buy-top-right h3 a{
+    color: #0066ff;
+    font-size: 18px;
+}
+.buy-top-item{
+    line-height: 22px;
+    padding: 10px 15px;
+    background: #fff;
+    margin-bottom: 5px;
+}
+.buy-top-item div:last-child{
+    border-bottom: none;
+}
+.buy-top-box{
+    line-height: 22px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.buy-top-title{
+    margin: 0;
+    font-weight: normal;
+}
+.buy-top-title img{
+    margin-right: 10px;
+}
+.buy-top-sec{
+    margin: 10px 0 0 0;
+    font-weight: normal;
+}
+.margin-top-5{
+    margin-top: 5px;
+}
+.margin-top-10{
+    margin-top: 10px;
+}
+.buy-bottom-btn{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 10px 15px;
+    border-top: 1px solid #ccc;
+}
+.buy-bottom-btn .am-btn-primary{
+    background: #0066ff;
+    width: 100%;
+    border-radius: 50px;
+    padding: 10px;
+}

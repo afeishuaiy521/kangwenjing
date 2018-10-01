@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" class="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>医生列表</title>
+    <link rel="stylesheet" href="../assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bd-scoll">
+    <div class="doctor-list-page">
+    </div>
+    <div class="doctor-details-page" style="display: none">
+        <input id="jsonval" type="hidden"/>
+        <div class="details-top-box">
+            <div class="details-top am-g">
+                <div class="am-u-sm-3">
+                    <img id="imageurl" src="" class="am-circle" width="74px">
+                </div>
+                <div class="am-u-sm-9 top-header">
+                    <h4 id="hos"></h4>
+                    <h4 id="office"><span id="Professor"></span></h4>
+                </div>
+            </div>
+            <div class="am-g details-top-bottom">
+                <div class="am-u-sm-3" id="name"></div>
+                <div class="am-u-sm-9 am-text-right">
+                    <button class="am-btn"><span class="am-icon-video-camera"></span>视频问诊</button>
+                </div>
+            </div>
+        </div>
+        <div class="details-center-box">
+            <h3><img src="../img/details_icon_03.png" width="26"/>擅长介绍</h3>
+            <h4 id="expert"></h4>
+        </div>
+        <div class="details-center-box">
+            <h3><img src="../img/details_icon_03.png" width="26"/>医生简介</h3>
+            <h4 id="synopsis"></h4>
+        </div>
+        <div class="buy-bottom-btn">
+            <a id="backBtndetails" class="am-btn am-btn-primary">返回</a>
+        </div>
+    </div>
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../assets/js/amazeui.js"></script>
+    <script src="../js/index.js"></script>
+
+</body>
+</html>
