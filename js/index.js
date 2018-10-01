@@ -31,7 +31,7 @@ $(function () {
             '<div class="am-u-sm-3"><img class="am-circle" src="' + doctorList.list[i].imageurl + '" width="74px"/></div>' +
             '<div class="am-u-sm-3 name" id="val1">' + doctorList.list[i].name + '</div>' +
             '<div class="am-u-sm-6 right">' +
-            '<button class="am-btn"><span class="am-icon-video-camera"></span>视频问诊</button>' +
+            '<button class="am-btn" data-am-modal="{target: \'#my-alert\',closeViaDimmer: 0}"><span class="am-icon-video-camera"></span>视频问诊</button>' +
             '</div>' +
             '</div>' +
             '<a class="am-g item-text" id="' + doctorList.list[i].id + '" >' +

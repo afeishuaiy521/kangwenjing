@@ -48,12 +48,48 @@
 }
 .index-page-top h1{
     margin: 0;
+    font-size: 20px;
 }
 .index-page-top h2{
     margin: 0 0 10px 0;
+    font-size: 17px;
+}
+.tip-box .am-modal-bd{
+    text-align: left;
+    border-bottom: none;
+}
+.tip-box .am-modal-dialog{
+    border-radius: 10px;
+}
+#btnYes{
+    display: block;
+    border-radius: 50px;
+    background: #0066ff;
+    color: #fff;
+    padding: 5px 15px;
+    margin: 10px 15px 20px 15px;
+}
+#btnYes .am-modal-btn{
+    color: #fff;
+    text-align: center;
+    display: block!important;
+    line-height: 34px;
+    height: 34px;
+}
+#btnYes .am-modal-btn:active {
+    background: #0066ff;
+}
+.index-tip-box .am-modal-bd{
+    border: none;
+}
+.index-tip-box .am-modal-dialog{
+    border-radius: 10px;
 }
 /*
 助医页面*/
+.medical-page{
+    padding-bottom: 50px;
+}
 .header-style span{
     color: #0066ff;
 }
