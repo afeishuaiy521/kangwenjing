@@ -1,3 +1,18 @@
+html{ -webkit-tap-highlight-color :rgba(0, 0, 0, 0);}
+body {
+    font-family:"Microsoft yahei", Arial, Verdana;
+    background: #fff;
+    margin: auto!important;
+    max-width: 640px;
+    position:relative;
+}
+
+body, div, fieldset, form, h1, h2, h3, h4, h5, h6, html, p, span {
+    -webkit-text-size-adjust: none
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
 /*主页*/
 .index-page .am-tabs-nav{
     position: fixed;
@@ -328,6 +343,13 @@
     font-size: 1.25em;
     margin-right: 10px;
     color: #333;
+}
+.health-record-bottom{
+    display: block;
+    color: #000;
+}
+.health-record-bottom:hover {
+    color: #000;
 }
 .health-record-bottom .left-bottom{
     line-height: 150px;

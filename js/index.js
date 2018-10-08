@@ -72,6 +72,7 @@ $(function () {
             $("#name").html(doctorList.list[0].name);
             $("#expert").html(doctorList.list[0].expert);
             $("#imageurl").attr("src", doctorList.list[0].imageurl);
+            $("title").text("医生详情");
         } else if (listid == 2) {
             $(".doctor-details-page").show();
             $(".bd-scoll").css("overflow","hidden");
@@ -82,6 +83,7 @@ $(function () {
             $("#name").html(doctorList.list[1].name);
             $("#expert").html(doctorList.list[1].expert);
             $("#imageurl").attr("src", doctorList.list[1].imageurl);
+            $("title").text("医生详情");
         } else if (listid == 3) {
             $(".doctor-details-page").show();
             $(".bd-scoll").css("overflow","hidden");
@@ -92,6 +94,7 @@ $(function () {
             $("#name").html(doctorList.list[2].name);
             $("#expert").html(doctorList.list[2].expert);
             $("#imageurl").attr("src", doctorList.list[2].imageurl);
+            $("title").text("医生详情");
         } else if (listid == 4) {
             $(".doctor-details-page").show();
             $(".bd-scoll").css("overflow","hidden");
@@ -102,6 +105,7 @@ $(function () {
             $("#name").html(doctorList.list[3].name);
             $("#expert").html(doctorList.list[3].expert);
             $("#imageurl").attr("src", doctorList.list[3].imageurl);
+            $("title").text("医生详情");
         } else if (listid == 5) {
             $(".doctor-details-page").show();
             $(".bd-scoll").css("overflow","hidden");
@@ -112,6 +116,7 @@ $(function () {
             $("#name").html(doctorList.list[4].name);
             $("#expert").html(doctorList.list[4].expert);
             $("#imageurl").attr("src", doctorList.list[4].imageurl);
+            $("title").text("医生详情");
         } else if (listid == 6) {
             $(".doctor-details-page").show();
             $(".bd-scoll").css("overflow","hidden");
@@ -122,6 +127,7 @@ $(function () {
             $("#name").html(doctorList.list[5].name);
             $("#expert").html(doctorList.list[5].expert);
             $("#imageurl").attr("src", doctorList.list[5].imageurl);
+            $("title").text("医生详情");
         } else if (listid == 7) {
             $(".doctor-details-page").show();
             $(".bd-scoll").css("overflow","hidden");
@@ -132,6 +138,7 @@ $(function () {
             $("#name").html(doctorList.list[6].name);
             $("#expert").html(doctorList.list[6].expert);
             $("#imageurl").attr("src", doctorList.list[6].imageurl);
+            $("title").text("医生详情");
         } else if (listid == 8) {
             $(".doctor-details-page").show();
             $(".bd-scoll").css("overflow","hidden");
@@ -142,10 +149,12 @@ $(function () {
             $("#name").html(doctorList.list[7].name);
             $("#expert").html(doctorList.list[7].expert);
             $("#imageurl").attr("src", doctorList.list[7].imageurl);
+            $("title").text("医生详情");
         }
     });
     $("#backBtndetails").click(function () {
         $(this).parent().parent().hide();
         $(".bd-scoll").css("overflow","auto");
+        $("title").text("医生列表");
     })
 });
