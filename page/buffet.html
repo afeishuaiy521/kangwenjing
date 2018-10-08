@@ -10,12 +10,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <script type="text/javascript" src="../js/indexs.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
-
 </head>
 <body>
   <div class="wrapper">
     <div class="productImg">
-        <img src="../img/group01.jpg"/>
+        <img src="../img/ban.jpg"/>
     </div>
     <div class="meal_item clearfix">
         <span class="cost_label">价格</span>
@@ -309,14 +308,16 @@
            <p>好的自然环境，自然的种养方式，让食材更新鲜更健康，让老人吃的放心，吃出健康！</p>
         </div>
     </div>
-    <div class="meal_intro">
+    <div class="meal_intro company">
         <h3 class="column_title">厨师团队介绍</h3>
         <div class="company">
            <img src="../img/group03.jpg"/>
            <div class="com_intro">
-              <p>厨师长：张慧彬</p>
-              <p>性别：男</p>
-              <p>中式烹调师</p>
+              <p class="line1">
+                  <span class="mr32">厨师长：张慧彬</span>
+                  <span>性别：男</span>
+              </p>
+              <p><span class="blue_rack">中式烹调师</span></p>
            </div>
         </div>
         <div class="content"><p>张师傅在专注于烹饪的道路上坚持了15年，川菜、粤菜、浙菜、鲁菜信手拈来。“做菜是没有秘诀的，菜的味道无非就是酸甜苦辣咸，这五个味道，最重要的还是用心。”谈到做菜，话不多的张师傅一改常态，开始侃侃而谈，“用心，更要用情。闲暇的时候我最喜欢的就是研究养生食谱，结合老年群体普遍慢病三高的情况，把平日里最普通的食材，变成各种营养餐点，让老人吃的放心，吃的营养，吃的健康，就是我最大的心愿，也是我的乐趣所在。”</p></div>
@@ -324,10 +325,31 @@
   </div>
   <div class="footer">
      <div class="order_item">
-        <span class="blueBtn">立即预订</span>
+        <span class="blueBtn orderBtn">立即预订</span>
      </div>
   </div>
-  <script src="../js/jquery-1.10.2.min.js"></script>
+  <!--弹框-->
+  <div class="popup_wrap">
+      <div class="popup_cover"></div>
+      <div class="popup_case">
+          <div class="popop_box">
+              <h3 class="">提示</h3>
+              <div class="content">你所在的地区尚未开通此服务,请耐心等待</div>
+              <span class="blueBtn comfirm">确定</span>
+          </div>
+      </div>
+  </div>
+  <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
   <script type="text/javascript" src="../js/base.js"></script>
+  <script type="text/javascript">
+   $(function(){
+       $(".orderBtn").click(function(){
+           $(".popup_wrap").show()
+       })
+       $(".comfirm").click(function(){
+           $(".popup_wrap").hide()
+       })
+   })
+  </script>
 </body>
 </html>

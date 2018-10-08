@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>助浴详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript" src="../js/indexs.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="bath_item">
+      <div class="bath_shade">
+          <h3></h3>
+          <p></p>
+          <div class="cost"><span class="label">价格</span><span class="price"></span></div>
+      </div>
+  </div>
+  <div class="company_int">
+     <h3 class="column_title">服务介绍</h3>
+     <div class="content">
+       <p>助浴是指的帮助一些洗澡有困难的人解决洗澡的过程。老年助浴主要是帮助在社区居家养老中有洗澡困难的老人，特别是指的为失能与半失能的老人提供优质的、安全的洗浴服务。</p>
+       <p>主要服务内容包括：协助穿脱衣、洗头、剃须、刷牙、漱口（不能自理者做口腔清洁）、洗脸洗手、梳头、洗脚、会阴清洁、协助洗澡（不能自理者床上擦浴）、修剪指（趾）甲。</p>
+     </div>
+  </div>
+  <div class="path">
+     <h3 class="column_title">服务流程</h3>
+     <ul class="path_list">
+        <li><b>1</b><span>线上预约</span></li>
+        <li><b>2</b><span>预约确认、派单</span></li>
+        <li><b>3</b><span>服务人员接单</span></li>
+        <li><b>4</b><span>确认服务时间、地址</span></li>
+        <li><b>5</b><span>服务人员上门签到</span></li>
+        <li><b>6</b><span>提供保洁服务</span></li>
+        <li><b>7</b><span>客户验收服务结果</span></li>
+        <li><b>8</b><span>客户评价服务满意度</span></li>
+        <li><b>9</b><span>服务结束</span></li>
+     </ul>
+  </div>  
+  
+  <div class="server_int">
+     <h3 class="column_title">服务标准</h3>
+     <div class="stand_line">
+        <div class="icont_1">操作前准备：</div>
+        <div class="text">毛巾、脸盆、水壶、简易洗头盆（卧床的这里改成专用卧床洗发盆）、温水、防水垫、洗发用品、梳子、吹风机等物品；</div>
+     </div>
+     <div class="stand_line">
+        <div class="icont_2">操作前准备：</div>
+        <div class="text">按标准规范严格执行每一个操作步骤</div>
+     </div>
+     <div class="stand_line">
+        <div class="icont_3">操作前准备：</div>
+        <div class="text">
+           <p>① 长者有疾病史的需提前沟通，避免意外产生；</p>
+           <p>② 服务过程中时刻关注老人身体状态，避免老人着凉，呛咳等，注意服务环境整理复原。</p>
+        </div>
+     </div>
+  </div>
+</div>  
+<div class="footer">
+ <div class="order_item">
+    <span class="blueBtn orderBtn">立即预订</span>
+ </div>
+</div>
+<!--弹框-->
+<div class="popup_wrap">
+    <div class="popup_cover"></div>
+    <div class="popup_case">
+        <div class="popop_box">
+            <h3 class="">提示</h3>
+            <div class="content">你所在的地区尚未开通此服务,请耐心等待</div>
+            <span class="blueBtn comfirm">确定</span>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../js/base.js"></script>
+<script type="text/javascript">
+    var url=window.location.href.toString();
+    var index=url.split("=")[1];
+    var info=[
+        {
+            img:"../img/bath02.jpg",
+            name:'上门洗发（协助）',
+            price:'￥25.00/15分钟 ',
+            content:"上门协助老人洗发，服务人员自带洗护用品上门，服务时长15分钟。"
+        },
+        {
+            img:"../img/bath02.jpg",
+            name:'上门洗发（卧床）',
+            price:'￥40.00/20分钟',
+            content:"上门服务老人卧床洗发，服务人员准备专用卧床洗发盆上门，服务时长20分钟"
+        },
+        {
+            img:"../img/bath03.png",
+            name:'上门助浴（协助）',
+            price:'￥60.00/40分钟 ',
+            content:"上门协助老人洗浴，含洗发服务，服务人员准备助浴凳上门，服务时长40分钟"
+        },
+        {
+            img:"../img/bath03.png",
+            name:'上门助浴（卧床）',
+            price:'￥100.00/50分钟 ',
+            content:"上门服务老人卧床洗浴，含洗发服务，服务人员准备卧床洗浴槽上门，服务时长50分钟"
+        },
+        {
+            img:"../img/bath01.png",
+            name:'上门助浴协助包月 ',
+            price:'￥300.00/月',
+            content:"每月4次上门服务，为老人提供助浴，皮肤护理等专业级服务，单次服务时长50分钟"
+        },
+        {
+            img:"../img/bath01.png",
+            name:'上门助浴护理包月',
+            price:'￥600.00/月 ',
+            content:"每月4次上门服务，为老人提供助浴、皮肤护理、肌肉恢复性按摩等护理级服务，单次服务时长90分钟"
+        },
+        {
+            img:"../img/bath02.jpg",
+            name:'上门洗发（协助）/（卧床）',
+            price:'￥25.00/15分钟',
+            content:"上门协助老人洗发，服务人员自带洗护用品上门，服务时长15分钟。"
+        }
+    ];
+    $(".bath_item").css({
+        "background-image":'url('+info[index].img+')'
+    })
+    $(".bath_item h3").html(info[index].name);
+    $(".bath_item p").html(info[index].content);
+    $(".bath_item .price").html(info[index].price)
+
+    $(function(){
+        $(".orderBtn").click(function(){
+            $(".popup_wrap").show()
+        })
+        $(".comfirm").click(function(){
+            $(".popup_wrap").hide()
+        })
+    })
+</script>
+</body>
+</html>

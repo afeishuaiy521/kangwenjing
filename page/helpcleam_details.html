@@ -14,10 +14,10 @@
 <body>
 <div class="wrapper">
   <div class="clean_item">
-     <div class="headImg"><img src="../img/01.jpg"/></div>
-     <h3 class="nickname">王汉莉</h3>
-     <div class="intro">擅长：有丰富的临床经验，擅长心脑血管和心脏手术、高血压、感冒的以及各种手术效图等原因，很多效果不止到你就不止虎了加加加爱。</div>
-     <div class="cost"><span class="label">价格</span><span class="price">¥18.00</span></div>
+     <div class="headImg"><img src=""/></div>
+     <h3 class="nickname"></h3>
+     <div class="intro"></div>
+     <div class="cost"><span class="label">价格</span><span class="price">¥35.00/1小时</span></div>
   </div>
   
   <div class="path">
@@ -74,10 +74,65 @@
 </div>  
 <div class="footer">
  <div class="order_item">
-    <span class="blueBtn">立即预订</span>
+    <span class="blueBtn orderBtn">立即预订</span>
  </div>
 </div>
-  <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript" src="../js/base.js"></script>
+<!--弹框-->
+<div class="popup_wrap">
+    <div class="popup_cover"></div>
+    <div class="popup_case">
+        <div class="popop_box">
+            <h3 class="">提示</h3>
+            <div class="content">你所在的地区尚未开通此服务,请耐心等待</div>
+            <span class="blueBtn comfirm">确定</span>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../js/base.js"></script>
+<script type="text/javascript">
+    var url=window.location.href.toString();
+    var index=url.split("=")[1];
+
+    var info=[
+        {
+            nickname:'王汉莉',
+            headImg:'../img/01.jpg',
+            content:'女，1965年生，湖北荆州人，从事养老家政服务20余年，有着丰富的家政服务、养老护理经验。多次参加民政组织的专业性家政养老护理培训。'
+        },
+        {
+            nickname:'陈育红',
+            headImg:'../img/02.jpg',
+            content:'女，1963年生，湖北武汉人，多次参加各种专业家政与护理培训，从事家政养老服务十几年。一直对待工作兢兢业业，恪守本职工作。坚信做一个有爱心愿奉献的人，也曾多年连续照顾老人的衣食住行经验丰富。'
+        },
+        {
+            nickname:'田彩云',
+            headImg:'../img/03.jpg',
+            content:'女，1970年生，湖北黄冈人，先后从事过育儿、养老、家政等各项服务工作。在工作中不断的累积经验不断学习。先后也参加过多次的家政培训与比赛。都取得优秀的成绩。'
+        },
+        {
+            nickname:'潘丽荣',
+            headImg:'../img/04.jpg',
+            content:'女，1966年生，湖北武汉人，从事家政工作十几年，先后取得了护理员资格证书。也参与过家政护理类的初级中级以及高级培训。都顺利通过并取得结业证书。工作中，热心照料老人，做好家政服务。也取得了公司与客户的认可。'
+        },
+        {
+            nickname:'刘香元',
+            headImg:'../img/05.jpg',
+            content:'女，1969年生，湖北襄阳人，从事家政服务8年时间。在这8年中我积极努力学习各种家政知识。做好每一次的家政服务。得到公司以及客户的认可。工作期间多次参加民政组织的学习培训，积极参与各项家政赛事，也取得了优秀的成绩。'
+        }
+    ];
+    $(".clean_item .headImg img").attr("src",info[index].headImg);
+    $(".clean_item .nickname").html(info[index].nickname);
+    $(".clean_item .intro").html(info[index].content);
+
+    $(function(){
+        $(".orderBtn").click(function(){
+            $(".popup_wrap").show()
+        })
+        $(".comfirm").click(function(){
+            $(".popup_wrap").hide()
+        })
+    })
+</script>
 </body>
 </html>
